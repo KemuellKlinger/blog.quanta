@@ -8,11 +8,12 @@
 }
 header{
     background-color: #101841;
-    box-shadow: 2px 7px 10px #261b3e;
+    box-shadow: 2px 7px 10px #16033f;
     width: 100%;
+
 }
 body {
-    background-color: #ffffff;
+    background-image: linear-gradient(rgb(31, 58, 151), rgb(3, 8, 21) 10%, rgb(3, 8, 21) 80%, rgb(31, 58, 151));
     color: #333;
     display: flex;
     flex-direction: column;
@@ -28,6 +29,7 @@ body {
     align-items: center;
     padding: 0.5rem 5rem;
     z-index: 2;
+  
 }
 
 .nav-bar::before {
@@ -164,7 +166,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
 }
 .desafioTemp img {
     width: 50%;
