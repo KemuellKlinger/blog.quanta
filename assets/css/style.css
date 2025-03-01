@@ -52,10 +52,7 @@ header {
     transition: 0.5s;
 }
 .nav-item:hover {
-    background-color: #0187a7;
-    border-radius: 5px;
-    padding: 3px;
-    transition: background-color 0.5s ease, padding 0.5s ease;
+    color: #000;
 }
 
 .nav-link {
