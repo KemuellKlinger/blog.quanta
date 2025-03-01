@@ -4,6 +4,10 @@
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
+body {
+    background-color: #ffffff;
+    color: #333;
+}
 
 header {
     background-color: #101841;
@@ -28,7 +32,7 @@ header {
     bottom: 0;
     background-image: url(../../imgIconQuanta/bannerRandom.png);
     background-position: center;
-    filter: blur(2px); /* Ajuste o valor conforme necessário */
+    filter: blur(2px); 
     z-index: -2;
 }
 
@@ -130,3 +134,46 @@ header {
 }
 
 
+.desafioTemp {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em 2em;
+    /* background-image: url(../../imgIconQuanta/sesi_robotica_2024_kv_fll.png);
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+    
+}
+.desafioTemp img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    margin: 2em 0;
+}
+
+.desafio, .cadernoEng, .patricia, .refesa{
+    background-color: #0187a7;
+    padding: 2em 3em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    opacity: 0.9;
+    margin: 2em 10em;
+}
+
+@media screen and (max-width: 730px) {
+    .desafioTemp {
+        height: auto;
+        padding: 2em;
+    }
+    .desafio {
+        padding: 1em 1.5em;
+    }
+}
