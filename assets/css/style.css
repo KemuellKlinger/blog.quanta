@@ -11,9 +11,24 @@ header {
 }
 
 .nav-bar {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1.5rem 6rem;
+}
+
+.nav-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../imgIconQuanta/bannerRandom.png);
+    background-position: center;
+    filter: blur(2px); /* Ajuste o valor conforme necessário */
+    z-index:1;
 }
 
 .logo {
@@ -21,13 +36,8 @@ header {
     align-items: center;
 }
 
-.logo h1 {
-    color: #fff;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
+.logo img{
+    width: 100px;
 }
 
 .nav-list ul {
