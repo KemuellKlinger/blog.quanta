@@ -152,14 +152,14 @@ header {
     
 }
 .desafioTemp img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
     margin: 2em 0;
 }
 
-.desafio, .cadernoEng, .patricia, .refesa{
+.desafio, .cadernoEng, .patricia,.jorge, .refesa{
     background-color: #0187a7;
     padding: 2em 3em;
     border-radius: 10px;
