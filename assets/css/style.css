@@ -6,8 +6,8 @@
 }
 
 header {
-    background-color: #24252a;
-    box-shadow: 0px 3px 10px #464646;
+    background-color: #101841;
+    box-shadow: 2px 7px 10px #261b3e;
 }
 
 .nav-bar {
@@ -15,11 +15,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 6rem;
+    padding: 1rem 5rem;
+    z-index: 2;
 }
 
 .nav-bar::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -28,7 +29,7 @@ header {
     background-image: url(../../imgIconQuanta/bannerRandom.png);
     background-position: center;
     filter: blur(2px); /* Ajuste o valor conforme necessário */
-    z-index:1;
+    z-index: -2;
 }
 
 .logo {
@@ -48,6 +49,13 @@ header {
 
 .nav-item {
     margin: 0 15px;
+    transition: 0.5s;
+}
+.nav-item:hover {
+    background-color: #0187a7;
+    border-radius: 5px;
+    padding: 3px;
+    transition: background-color 0.5s ease, padding 0.5s ease;
 }
 
 .nav-link {
