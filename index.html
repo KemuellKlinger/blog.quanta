@@ -4,12 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quanta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="shortcut icon" href="imgIconQuanta/atomo.png" type="image/x-icon">
 </head>
 <header>
+    <script>
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            let logo = document.querySelector(".logo img");
+    
+            if (window.scrollY > 50) {
+                header.classList.add("small");
+                logo.style.width = "50px"; // Reduzindo o tamanho do logo
+            } else {
+                header.classList.remove("small");
+                logo.style.width = "90px"; // Tamanho original do logo
+            }
+        });
+    </script>
     <nav class="nav-bar">
         <div class="logo">
             <a href="#"><img src="imgIconQuanta/4.png.png" alt=""></a>
@@ -231,6 +245,7 @@
         </section>
     </main>
     <script src="assets/js/script.js"></script>
+   
 </body>
 <footer>
     <p>Desenvolvido por: <a href="#">Kemuell</a></p>
