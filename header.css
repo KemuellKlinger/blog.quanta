@@ -2,12 +2,10 @@ header{
     background-color: #101841;
     box-shadow: 2px 7px 10px #16033f;
     width: 100%;
-    position: fixed;
-    opacity: 0.9;
+    position: relative;
 }
 
 .nav-bar {
- 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +85,9 @@ header{
 }
 
 @media screen and (max-width: 730px) {
+
     .nav-bar {
+
         padding: 1.5rem 4rem;
     }
     .nav-item {
