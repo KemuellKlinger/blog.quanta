@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    box-sizing: border-box
+}
+
+body {
+    /* background-image: url(imgIconQuanta/bannerRandom.png); */
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+}
+
+main {
+    margin-top: 110px;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 1 100vw;
+}
+
+footer {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: grey;
+}
+
+
+.imagens {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    margin: 2em;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+#inicio img{
+    width: 100%;
+}
+
+#patricia{
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 730px) {
+    #patricia{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagens{
+        max-width: 300px;
+    }
+    
+}
+.informativo{
+    margin: 2em;
+    border-radius: 10px;
+    padding: 10px;
+}
